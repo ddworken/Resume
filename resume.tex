@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{multirow}  % used for combining cells in tables
+\usepackage{changepage}  % used to adjust margins and shift goals into the top margin
+\usepackage[colorlinks,urlcolor=blue]{hyperref}  % used for links
+\usepackage[margin=0.3in]{geometry}  % used to set page margins
+\usepackage{float}  % used with below line to force the last table onto this page
+\restylefloat{table}
+
+
+\begin{document}
+
+% Top Header: 
+
+\begin{adjustwidth}{0cm}{}
+\begin{table}[t]
+\begin{tabular}{lr}
+\multirow{4}{15cm}{\Huge \vspace*{3cm} \textbf{David Dworken}} & {\color{blue}\underline{\smash{\href{https://hackerone.com/ddworken}{hackerone.com/ddworken}}}} \\
+                                                     & {\color{blue}\underline{\smash{\href{https://github.com/ddworken}{github.com/ddworken}}}}    \\
+                                                     & 571-232-4556           \\
+                                                     & Boston, MA            
+\end{tabular}
+\end{table}
+\end{adjustwidth}
+
+% Goals: 
+
+\vspace{-15mm}
+\begin{table}[!htp]
+\begin{tabular}{l}
+\multirow{2}{*}{\textbf{\Large Goals}} \\
+                                       \\
+\large $\bullet$ Major in Computer Science and minor in Electrical Engineering at Northeastern University.                  \\
+\large $\bullet$ Continue to contribute to open source projects and search for vulnerabilities in widely deployed software.
+\end{tabular}
+\end{table}
+
+\vspace{-6mm}
+\underline{\hspace{19cm}}
+\vspace{-4mm}
+% Education and Skills: 
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{ll} 
+\multirow{2}{12cm}{\textbf{\Large Education}}                   &                                                           \\
+                                                                &          \multirow{2}{*}{\textbf{\Large Skills}}          \\
+\large Maret School: Graduated in 2016                          &                                                           \\
+\large Relevant Classes:                                        & \large $\bullet$ Proficient with Python and Rust          \\
+\large $\bullet$ AP Computer Science                            & \large $\bullet$ Web security and bug bounties            \\
+\large $\bullet$ Independent Study in Computer Science: Rust    & \large $\bullet$ Experienced with Bash for scripting      \\
+\large Northeastern University: Graduation in 2020              & \large $\bullet$ Basic knowledge of LaTeX and C++         \\
+\large Relevant Classes:                                        & \large $\bullet$ Basic knowledge of embedded electronics  \\
+\large $\bullet$ Fundamentals of Computer Science 1             &                                                           \\
+\large $\bullet$ Discrete Structures                            &                                    
+\end{tabular}
+\end{table}
+
+\vspace{-6mm}
+\underline{\hspace{19cm}}
+\vspace{-4mm}
+% Previous Work and Experience
+
+\begin{table}[!htp]
+\begin{tabular}{l}
+\multirow{2}{*}{\textbf{\Large Previous Work and Experience}} \\
+                                                              \\
+\large HackerOne (Winter 2015 - Now)                          \\
+\large Independent Security Researcher on the HackerOne Platform ({\color{blue}\underline{\smash{\href{https://hackerone.com/ddworken}{hackerone.com/ddworken}}}}) \\
+\large $\bullet$ One of the top 10 ranked researchers on Uber’s bug bounty                        \\
+\large $\bullet$ Reported vulnerabilities to over three dozen different companies                 \\
+\large $\bullet$ Publicly disclosed numerous reports as a learning resource for other researchers \\
+\\
+\large Northeastern University (Fall 2016 - Now)                                                                              \\
+\large Student researcher at Northeastern’s College of Computer and Information Science                                       \\
+\large $\bullet$ Created a Raspberry Pi appliance to automatically provision Tor Hidden Services for all connected devices    \\
+\large $\bullet$ Wrote a custom Intrusion Detection System (IDS) that automatically scanned devices for vulnerabilities using \\ 
+\large \ \ \  a variety of online databases                                                                                   \\
+\\
+\large Georgetown University (Summer 2015)                                                                \\
+\large Researcher at Georgetown’s Computer Science Security Lab                                           \\
+\large $\bullet$ Wrote custom programs to automatically classify thousands of different proxies’ behavior \\
+\large $\bullet$ Discovered numerous free proxies that maliciously modify traffic                         \\
+\large $\bullet$ Compared behavior of free proxies to the behavior of Tor exit nodes                      \\
+                                             
+\end{tabular}
+\end{table}
+
+\vspace{-6mm}
+\underline{\hspace{19cm}}
+\vspace{-4mm}
+% Personal Projects
+
+\begin{table}[!htp]
+\begin{tabular}{l}
+\multirow{2}{*}{\textbf{\Large Personal Projects}} \\
+\\
+\large snapperS ({\color{blue}\underline{\smash{\href{https://github.com/ddworken/snapperS}{https://github.com/ddworken/snapperS}}}}) \\
+\large $\bullet$ Wrote a Python program to assist in managing BTRFS subvolumes created by Snapper                                     \\
+\large $\bullet$ Allows easy permanent deletion of a file from all previous BTRFS snapshots                                           \\        
+\\
+\large racython ({\color{blue}\underline{\smash{\href{https://github.com/ddworken/racython}{https://github.com/ddworken/racython}}}}) \\
+\large $\bullet$ Wrote a Racket interpreter in Python                                                                                 \\
+\large $\bullet$ Implemented recursion and local scope for variable bindings                                                          \\       
+
+\end{tabular}
+\end{table}
+
+\vspace{-6mm}
+\underline{\hspace{19cm}}
+\vspace{-4mm}
+% Cybersecurity Work: 
+
+\begin{table}[H]
+\begin{tabular}{l}
+\multirow{2}{*}{\textbf{\Large Cybersecurity Work}} \\
+\\
+\large $\bullet$ Honored by the Secretary of Defense for participation in the Department of Defense’s bug bounty program \\
+\large $\bullet$ Participated in HackerOne’s inaugural H1-702 bug bounty program at DEF CON 24                           \\
+\large $\bullet$ Ported WiFi jamming functionality to {\color{blue}\underline{\smash{\href{https://github.com/danmcinerney/lans.py}{LANs.py}}}}, an MITM tool with thousands of users \\
+\large $\bullet$ Contributed code to {\color{blue}\underline{\smash{\href{https://github.com/danmcinerney/xsscrapy}{xsscrapy}}}}, an open source XSS and SQLi vulnerability scanner \\
+\large $\bullet$ Helped fix bugs in Let’s Encrypt, software that helps increase adoption of SSL through free automatically \\
+\large \ \ \ issued SSL certificates
+                                
+\end{tabular}
+\end{table}
+
+
+\end{document}

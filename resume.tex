@@ -2,9 +2,10 @@
 \usepackage{multirow}  % used for combining cells in tables
 \usepackage{changepage}  % used to adjust margins and shift goals into the top margin
 \usepackage[colorlinks,urlcolor=blue]{hyperref}  % used for links
-\usepackage[margin=0.3in]{geometry}  % used to set page margins
+\usepackage[margin=0.4in]{geometry}  % used to set page margins
 \usepackage{float}  % used with below line to force the last table onto this page
 \restylefloat{table}
+\pagenumbering{gobble}
 
 
 \begin{document}
@@ -14,49 +15,33 @@
 \begin{adjustwidth}{0cm}{}
 \begin{table}[t]
 \begin{tabular}{lr}
-\multirow{4}{15cm}{\Huge \vspace*{3cm} \textbf{David Dworken}} & {\color{blue}\underline{\smash{\href{https://hackerone.com/ddworken}{hackerone.com/ddworken}}}} \\
-                                                     & {\color{blue}\underline{\smash{\href{https://github.com/ddworken}{github.com/ddworken}}}}    \\
-                                                     & 571-232-4556           \\
-                                                     & Boston, MA            
+\multirow{4}{145mm}{\Huge \vspace*{3cm} \textbf{David Dworken}}         & {\color{blue}\underline{\smash{\href{mailto:david@daviddworken.com}{david@daviddworken.com}}}} \\
+                                                                        & {\color{blue}\underline{\smash{\href{https://hackerone.com/ddworken}{hackerone.com/ddworken}}}} \\
+                                                           & {\color{blue}\underline{\smash{\href{https://github.com/ddworken}{github.com/ddworken}}}}    \\ % NEU
+                                                                        & 571-232-4556           \\
+                                                                        & Boston, MA            
 \end{tabular}
 \end{table}
 \end{adjustwidth}
 
-% Goals: 
-
 \vspace{-15mm}
-\begin{table}[!htp]
-\begin{tabular}{l}
-\multirow{2}{*}{\textbf{\Large Goals}} \\
-                                       \\
-\large $\bullet$ Major in Computer Science and minor in Electrical Engineering at Northeastern University.                  \\
-\large $\bullet$ Continue to contribute to open source projects and search for vulnerabilities in widely deployed software.
-\end{tabular}
-\end{table}
-
-\vspace{-6mm}
-\underline{\hspace{19cm}}
-\vspace{-4mm}
 % Education and Skills: 
 
 \begin{table}[!htp]
 \centering
 \begin{tabular}{ll} 
-\multirow{2}{12cm}{\textbf{\Large Education}}                   &                                                           \\
-                                                                &          \multirow{2}{*}{\textbf{\Large Skills}}          \\
-\large Maret School: Graduated in 2016                          &                                                           \\
-\large Relevant Classes:                                        & \large $\bullet$ Proficient with Python and Rust          \\
-\large $\bullet$ AP Computer Science                            & \large $\bullet$ Web security and bug bounties            \\
-\large $\bullet$ Independent Study in Computer Science: Rust    & \large $\bullet$ Experienced with Bash for scripting      \\
-\large Northeastern University: Graduation in 2020              & \large $\bullet$ Basic knowledge of LaTeX and C++         \\
-\large Relevant Classes:                                        & \large $\bullet$ Basic knowledge of embedded electronics  \\
-\large $\bullet$ Fundamentals of Computer Science 1             &                                                           \\
-\large $\bullet$ Discrete Structures                            &                                    
+\multirow{2}{11cm}{\kern-1em{\hspace{10pt}{\textbf{\Large Education}}}}                   &  \multirow{2}{*}{\kern-1em{\hspace{3pt}\textbf{\Large Skills}}}     \\
+                                                                &       \\
+\large Northeastern University: 2016 -- Present, GPA: 4.0/4.0              & \large $\bullet$ Proficient with Python, Java, and Rust  \\
+\large College of Computer and Information Science, 2020      & \large $\bullet$ Product security and bug bounties          \\ % NEU
+\large {Candidate for a Bachelors of Science in Computer Science}                                                      & \large $\bullet$ Experienced with Bash for scripting            \\
+\large Relevant Classes:                   & \large $\bullet$ Basic knowledge of LaTeX and C++      \\
+\large $\bullet$ Algorithms \& Data, Object Oriented Design                   & \large $\bullet$ Basic knowledge of embedded electronics         \\ 
 \end{tabular}
 \end{table}
 
 \vspace{-6mm}
-\underline{\hspace{19cm}}
+\hspace{-5mm}\underline{\hspace{195mm}}
 \vspace{-4mm}
 % Previous Work and Experience
 
@@ -64,29 +49,37 @@
 \begin{tabular}{l}
 \multirow{2}{*}{\textbf{\Large Previous Work and Experience}} \\
                                                               \\
-\large HackerOne (Winter 2015 - Now)                          \\
-\large Independent Security Researcher on the HackerOne Platform ({\color{blue}\underline{\smash{\href{https://hackerone.com/ddworken}{hackerone.com/ddworken}}}}) \\
-\large $\bullet$ One of the top 10 ranked researchers on Uber’s bug bounty                        \\
-\large $\bullet$ Reported vulnerabilities to over three dozen different companies                 \\
+
+\large \textbf{Salesforce} \hfill (June 2017 - Aug. 2017)                          \\
+\large \textit{Product Security Engineer Intern} \\
+\large $\bullet$ Audited code and assisted in identifying a number of security vulnerabilities  \\
+\large $\bullet$ Created and open sourced AutoTriageBot: A HackerOne bot capable of automatically verifying 30-40\% \\ \large\ \ \ of incoming vulnerability reports \\ 
+\\
+\vspace{-1mm}
+\large \textbf{HackerOne} \hfill (Feb. 2015 - Present)                          \\
+\vspace{1mm}
+\large \textit{Independent Security Researcher on the HackerOne Platform} ({\color{blue}\underline{\smash{\href{https://hackerone.com/ddworken}{hackerone.com/ddworken}}}}) \\
+\large $\bullet$ One of the top 10 ranked researchers on Uber\textsc{\char13}s bug bounty                        \\
+\large $\bullet$ Responsibly disclosed vulnerabilities to over three dozen different companies                 \\
 \large $\bullet$ Publicly disclosed numerous reports as a learning resource for other researchers \\
 \\
-\large Northeastern University (Fall 2016 - Now)                                                                              \\
-\large Student researcher at Northeastern’s College of Computer and Information Science                                       \\
-\large $\bullet$ Created a Raspberry Pi appliance to automatically provision Tor Hidden Services for all connected devices    \\
-\large $\bullet$ Wrote a custom Intrusion Detection System (IDS) that automatically scanned devices for vulnerabilities using \\ 
-\large \ \ \  a variety of online databases                                                                                   \\
+\vspace{-1mm}
+\large \textbf{Northeastern University} \hfill (Sep. 2016 - May 2017)                                                                              \\
+\large \textit{Student researcher at Northeastern\textsc{\char13}s College of Computer and Information Science}                                       \\
+\large $\bullet$ Created a Raspberry Pi appliance to automatically provision Tor Hidden Services for connected devices    \\
+\large $\bullet$ Wrote a custom Intrusion Detection System (IDS) that automatically scans devices for vulnerabilities \\ \large \ \ \ using a variety of online databases  \\
 \\
-\large Georgetown University (Summer 2015)                                                                \\
-\large Researcher at Georgetown’s Computer Science Security Lab                                           \\
+\vspace{-1mm}
+\large \textbf{Georgetown University} \hfill (June 2015 - Aug. 2015)                                                                \\
+\large Student researcher at Georgetown\textsc{\char13}s Computer Science Security Lab                                           \\
 \large $\bullet$ Wrote custom programs to automatically classify thousands of different proxies’ behavior \\
-\large $\bullet$ Discovered numerous free proxies that maliciously modify traffic                         \\
-\large $\bullet$ Compared behavior of free proxies to the behavior of Tor exit nodes                      \\
+\large $\bullet$ Compared malicious behavior of free proxies to the behavior of Tor exit nodes                      \\
                                              
 \end{tabular}
 \end{table}
 
 \vspace{-6mm}
-\underline{\hspace{19cm}}
+\hspace{-5mm}\underline{\hspace{195mm}}
 \vspace{-4mm}
 % Personal Projects
 
@@ -94,19 +87,18 @@
 \begin{tabular}{l}
 \multirow{2}{*}{\textbf{\Large Personal Projects}} \\
 \\
-\large snapperS ({\color{blue}\underline{\smash{\href{https://github.com/ddworken/snapperS}{https://github.com/ddworken/snapperS}}}}) \\
+\large \textbf{snapperS} ({\color{blue}\underline{\smash{\href{https://github.com/ddworken/snapperS}{https://github.com/ddworken/snapperS}}}}) \\
 \large $\bullet$ Wrote a Python program to assist in managing BTRFS subvolumes created by Snapper                                     \\
-\large $\bullet$ Allows easy permanent deletion of a file from all previous BTRFS snapshots                                           \\        
+\large $\bullet$ Allows easy and secure deletion of a file from all BTRFS snapshots                                           \\        
 \\
-\large racython ({\color{blue}\underline{\smash{\href{https://github.com/ddworken/racython}{https://github.com/ddworken/racython}}}}) \\
-\large $\bullet$ Wrote a Racket interpreter in Python                                                                                 \\
-\large $\bullet$ Implemented recursion and local scope for variable bindings                                                          \\       
+\large \textbf{racython} ({\color{blue}\underline{\smash{\href{https://github.com/ddworken/racython}{https://github.com/ddworken/racython}}}}) \\
+\large $\bullet$ Wrote a Racket interpreter in Python and implemented recursion and local scope for variable bindings                                                          \\       
 
 \end{tabular}
 \end{table}
 
 \vspace{-6mm}
-\underline{\hspace{19cm}}
+\hspace{-5mm}\underline{\hspace{195mm}}
 \vspace{-4mm}
 % Cybersecurity Work: 
 
@@ -114,13 +106,27 @@
 \begin{tabular}{l}
 \multirow{2}{*}{\textbf{\Large Cybersecurity Work}} \\
 \\
-\large $\bullet$ Honored by the Secretary of Defense for participation in the Department of Defense’s bug bounty program \\
-\large $\bullet$ Participated in HackerOne’s inaugural H1-702 bug bounty program at DEF CON 24                           \\
+\large $\bullet$ Honored by the Secretary of Defense for participation in the Department of Defense\textsc{\char13}s bug bounty \\
+\large $\bullet$ Participated in HackerOne\textsc{\char13}s inaugural H1-702 bug bounty program at DEF CON 24                           \\
 \large $\bullet$ Ported WiFi jamming functionality to {\color{blue}\underline{\smash{\href{https://github.com/danmcinerney/lans.py}{LANs.py}}}}, an MITM tool with thousands of users \\
 \large $\bullet$ Contributed code to {\color{blue}\underline{\smash{\href{https://github.com/danmcinerney/xsscrapy}{xsscrapy}}}}, an open source XSS and SQLi vulnerability scanner \\
-\large $\bullet$ Helped fix bugs in Let’s Encrypt, software that helps increase adoption of SSL through free automatically \\
-\large \ \ \ issued SSL certificates
-                                
+\large $\bullet$ Added XSS and SQLi scanning functionality to {\color{blue}\underline{\smash{\href{https://github.com/mitmproxy/mitmproxy}{mitmproxy}}}} \\
+\large $\bullet$ Helped fix bugs in Let’s Encrypt, software that helps increase adoption of SSL through free \\ \large \ \ \ automatically issued SSL certificates
+\\                              
+\end{tabular}
+\end{table}
+
+\vspace{-11mm}
+\hspace{-5mm}\underline{\hspace{195mm}}
+\vspace{-4mm}
+
+\begin{table}[H]
+\begin{tabular}{l}
+\multirow{2}{*}{\textbf{\Large Competitions}} \\ \\
+\large \textbf{MITRE embedded CTF}---2nd Place \\
+\large $\bullet$ Developed exploits for secure embedded bootloaders in MITRE\textsc{\char13}s embedded CTF competition \\
+\large \textbf{Northeast Collegiate Cyber Defense Competition}---2nd Place \\
+\large $\bullet$ Secured and defended a simulated corporate network from attackers over a 3 day competition \\
 \end{tabular}
 \end{table}
 
